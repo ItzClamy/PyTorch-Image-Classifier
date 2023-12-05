@@ -1,0 +1,42 @@
+{
+    "batch_size": 10,
+    "image_size": 128,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "epochs": 5,
+    "num_workers": 0,
+    "data": {
+        "train_dir": "data/train",
+        "valid_dir": "data/valid",
+        "preprocess_dir": "data/preprocess"
+    },
+    "model_path": "myFirstModel.pth",
+    "num_classes": 11,
+    "classes": [
+        "Apple_Apple_scrab", 
+        "Apple_Black_Rot", 
+        "Apple_Cedar_Apple_rust", 
+        "Apple_Healthy", 
+        "Blueberry_Healthy",
+        "Cherry_Healthy",
+        "Cherry_Powder_mildew",
+        "Corn_Cercospora_Leaf_Spot",
+        "Corn_Comman_Rust",
+        "Corn_Healthy",
+        "Corn_Northern_Leaf_Blight"
+    ],
+    "init_features": 12,
+    "conv_config": {
+        "kernal_size": 5,
+        "stride": 1, 
+        "padding": 1, 
+        "in_channels_conv1": 3,
+        "out_channels_conv1": 12, 
+        "in_channels_conv2": 12,
+        "out_channels_conv2": 12, 
+        "in_channels_conv3": 12, 
+        "out_channels_conv3": 24,
+        "in_channels_conv4": 24, 
+        "out_channels_conv4": 24
+    }
+}
